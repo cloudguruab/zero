@@ -1,0 +1,10 @@
+name: consistency_build
+
+on:
+    pull_requests:
+        jobs:
+            build:
+                runs-on: ubuntu-latest
+                steps:
+                    - name: Check out
+                    uses: actions/checkout@v3
